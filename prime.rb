@@ -1,25 +1,9 @@
 # # Add  code here!
  def prime?(number)
-#
+   
+return false if number <2
+return true if number==2
+(2..number-1).each{ |value| return false if value ==0}
 
-if number < 2
-  return false
-
-else
-
-  (2..number-1).to_a.each do |value|
-
-     if value % 2 != 0 && value > 0
-#
-        return true
-
-    elsif number < 0
-
-       return false
-
-    else
-        return false
+true
 end
-end
- end
- end
